@@ -13,7 +13,7 @@
     "content_scripts": [
         {
             "css": [
-                "hide.css"
+                "style.css"
             ],
             "js": [],
             "matches": [
