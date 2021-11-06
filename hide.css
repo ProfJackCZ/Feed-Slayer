@@ -1,0 +1,16 @@
+#contents, #header, #masthead-ad {
+    display: none !important;
+}
+
+#primary:after{
+    content: "feed blocked";
+
+    color: rgba(255, 255, 255, 0.800);
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+
+    position: absolute;
+    margin-top: 128px;
+    margin-left: 40%;
+}

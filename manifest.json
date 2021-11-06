@@ -1,0 +1,28 @@
+{
+    "name": "Feed Slayer",
+    "description": "Remove distraction feeds.",
+    "version": "1.0",
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "tabs",
+        "http://*.youtube.com/*",
+        "https://*.youtube.com/*"
+    ],
+    "content_scripts": [
+        {
+            "css": [
+                "hide.css"
+            ],
+            "js": [],
+            "matches": [
+                "*://www.youtube.com/",
+                "*://www.youtube.com/watch*",
+                "*://www.youtube.com/*",
+                "*://www.youtube.com/user*"
+            ]
+        }
+    ],
+    "manifest_version": 3
+}
