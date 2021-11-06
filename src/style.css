@@ -1,4 +1,4 @@
-ytd-two-column-browse-results-renderer[page-subtype="home"], #related {
+ytd-two-column-browse-results-renderer[page-subtype="home"], #related, .videowall-endscreen {
     display: none !important;
 }
 
