@@ -1,16 +1,20 @@
-#contents, #header, #masthead-ad {
+ytd-two-column-browse-results-renderer[page-subtype="home"], #related {
     display: none !important;
 }
 
-#primary:after{
+
+#secondary:after, ytd-browse[page-subtype="home"]:after {
     content: "feed blocked";
 
-    color: rgba(255, 255, 255, 0.800);
+    color: rgba(255, 255, 255, 0.400);
     font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: 0.5px;
 
-    position: absolute;
-    margin-top: 128px;
-    margin-left: 40%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 420px;
 }

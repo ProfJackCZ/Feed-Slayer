@@ -6,7 +6,9 @@
         "128": "icon.png"
     },
     "permissions": [
-        "tabs",
+        "tabs"
+    ],
+    "host_permissions": [
         "http://*.youtube.com/*",
         "https://*.youtube.com/*"
     ],
