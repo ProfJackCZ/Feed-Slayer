@@ -3,7 +3,7 @@ ytd-two-column-browse-results-renderer[page-subtype="home"], #related, .videowal
 }
 
 
-#secondary:after, ytd-browse[page-subtype="home"]:after {
+#secondary-inner:after, ytd-browse[page-subtype="home"]:after {
     content: "feed blocked";
 
     color: rgba(255, 255, 255, 0.400);
