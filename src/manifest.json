@@ -15,7 +15,7 @@
     "content_scripts": [
         {
             "css": [
-                "style.css"
+                "css/feed-block.css"
             ],
             "js": [],
             "matches": [
@@ -26,5 +26,8 @@
             ]
         }
     ],
+    "action": {
+        "default_popup": "popup.html"
+    },
     "manifest_version": 3
 }

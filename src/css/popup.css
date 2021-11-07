@@ -1,0 +1,93 @@
+:root{
+    --transition-time: .4s;
+    --color-background: #181818;
+    --color-panel: #242424;
+    --color-theme: #A9231D;
+    --color-active: #EB2F26;
+    --color-text: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    /*background-color: */
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 245px;
+    max-height: 400px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.switches {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    background-color: var(--color-panel);
+}
+
+
+
+header > img {
+    margin: 8px;
+    margin-left: 16px;
+    width: 28px;
+    height: 28px;
+}
+
+header > h1 {
+    margin: 8px;
+    margin-right: 0px;
+    line-height: 28px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-panel);
+    
+    border-radius: 8px;
+    padding: 0px 20px;
+    margin: 8px;
+}
+
+
+
+p.note {
+    font-size: 12px;
+    letter-spacing: .5px;
+    background-color: var(--color-panel);
+    padding: 4px 8px;
+    border-radius: 16px;
+    margin-top: 0px;
+}
+
+span.important, p.important {
+    color: white;
+    background-color: var(--color-theme);
+}
+
+
+a {
+    text-decoration: underline;
+    color: var(--color-theme);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}

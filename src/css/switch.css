@@ -1,0 +1,73 @@
+:root{
+    --switch-radius: 16px;
+}
+
+.switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 4px;
+    padding: 8px;
+    height: 20px;
+    
+    user-select: none;
+    border-radius: var(--switch-radius);
+    background-color: rgba(255, 255, 255, 0);
+    transition: var(--transition-time);
+}
+
+.switch:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: var(--transition-time);
+}
+
+.switch > input {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+.switch > label {
+    color: var(--color-text);
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+
+.switch > div {
+    background-color: var(--color-theme);
+    width: 42px;
+    height: 24px;
+    margin-left: 12px;
+
+    border-radius: var(--switch-radius);
+    transition: var(--transition-time);
+}
+
+
+.switch > div::after {
+    position: absolute;
+    background-color: white;
+    content: "";
+    width: 16px;
+    height: 16px;
+
+    border-radius: calc(var(--switch-radius)/2);
+    
+    transform: translate(4px, 4px);
+    transition: var(--transition-time);
+}
+
+.switch > input:checked ~ div::after {
+    transform: translate(20px, 4px);
+    transition: var(--transition-time);
+}
+
+.switch > input:checked ~ div {
+    background-color: var(--color-active);
+    transition: var(--transition-time);
+}
